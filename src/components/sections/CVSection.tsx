@@ -38,7 +38,7 @@ const CVSection = () => {
     {
       degree: "MSc in Financial Mathematics",
       institution: "King's College London",
-      url: "https://www.kcl.ac.uk/study/postgraduate-taught/courses/mathematics-msc",
+      url: "https://www.kcl.ac.uk/study/postgraduate-taught/courses/financial-mathematics-with-data-science-msc",
       honours: "Distinction",
       year: "2020"
     },
