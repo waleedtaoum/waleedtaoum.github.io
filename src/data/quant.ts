@@ -13,7 +13,7 @@ export const headline = {
 
 // Text between *asterisks* is shown in italics.
 export const profile = [
-  "Welcome to my website. I am a quantitative researcher working on SOFR derivatives pricing and portfolio optimisation, with a PhD in applied mathematics from King's College London. My research is on the pricing and hedging of interest rate derivatives in incomplete markets, where perfect replication is not possible.",
+  "Welcome to my website. I am a quantitative researcher working on SOFR derivatives pricing, hedging and portfolio optimisation, with a PhD in applied mathematics from King's College London. My research is on the pricing and hedging of interest rate derivatives in incomplete markets, where perfect replication is not possible.",
   "I build and solve high-dimensional optimisation models and implement them efficiently in Python, cutting a core pricing workflow from 8 minutes to 50 seconds. My SOFR term structure model is published in *Applied Mathematical Finance*, and a second paper, on the optimal pricing and hedging of SOFR derivatives, is under review. I have presented this work at conferences and seminars in Sydney, Vienna, Paris and London.",
   "Before the doctorate, I spent six years running a discretionary FX and index futures book to defined position-sizing and drawdown limits. Fluent in English, native French and Arabic.",
 ];
