@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { experience } from "@/data/quant";
+import { withItalics } from "@/lib/withItalics";
 
 const QuantExperience = () => (
   <section id="experience" className="py-12 bg-gradient-to-br from-blue-50 to-background dark:bg-none dark:bg-[hsl(var(--section-tint))]">
@@ -29,7 +30,7 @@ const QuantExperience = () => (
               </div>
               <ul className="list-disc pl-5 space-y-1.5 text-body text-[14px] text-left sm:text-justify">
                 {job.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
+                  <li key={highlight}>{withItalics(highlight)}</li>
                 ))}
               </ul>
             </CardContent>

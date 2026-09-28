@@ -34,7 +34,8 @@ export const publications = [
   {
     title: "Statistical Modeling of SOFR Term Structure",
     authors: ["Teemu Pennanen", "Waleed Taoum"],
-    venue: "Applied Mathematical Finance, 32(4), 253–288",
+    // *asterisks* mark italics (journal name) when displayed
+    venue: "*Applied Mathematical Finance*, 32(4), 253–288",
     year: 2025,
     type: "Article",
     status: "Published",

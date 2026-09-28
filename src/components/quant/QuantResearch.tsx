@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink, FileText } from "lucide-react";
 import { publications } from "@/data/content";
 import { research } from "@/data/quant";
+import { withItalics } from "@/lib/withItalics";
 
 // Pair each applied summary with its publication record (venue, year, status, link).
 const papers = research.map((paper) => ({
@@ -28,7 +29,7 @@ const QuantResearch = () => (
               </div>
               {publication && (
                 <p className="text-[13px] text-muted-foreground mb-3">
-                  {publication.venue} • {publication.year} · with T. Pennanen
+                  {withItalics(publication.venue)} • {publication.year} · with T. Pennanen
                 </p>
               )}
               <p className="text-body text-[14px] mb-4 text-left sm:text-justify">{summary}</p>

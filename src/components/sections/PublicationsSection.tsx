@@ -5,6 +5,7 @@ import { ChevronDown, Copy, ExternalLink, FileText, Quote, Users } from "lucide-
 import { useState } from "react";
 import { toast } from "sonner";
 import { publications } from "@/data/content";
+import { withItalics } from "@/lib/withItalics";
 
 type Panel = "abstract" | "bibtex";
 
@@ -82,7 +83,7 @@ const PublicationsSection = () => {
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div className="text-[13px] font-medium text-foreground">
-            {pub.venue} • {pub.year}
+            {withItalics(pub.venue)} • {pub.year}
           </div>
 
           <div className="flex flex-wrap gap-2">

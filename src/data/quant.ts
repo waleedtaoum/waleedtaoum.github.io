@@ -5,7 +5,8 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/waleedtaoum/";
 
 export const headline = {
   title: "Quantitative Researcher",
-  tagline: "Derivatives pricing and hedging · Interest rates · SOFR · Python",
+  // Each entry is shown on its own line under the photo.
+  tagline: ["Derivatives pricing and hedging", "Interest rates · SOFR · Python"],
   location: "London, United Kingdom",
   // Shown prominently: right to work is one of the first things UK recruiters check.
   workRights: { title: "UK ILR", details: ["Full right to work", "No sponsorship required"] },
@@ -63,7 +64,7 @@ export const experience: QuantExperience[] = [
       "Priced and hedged SOFR swaps, swaptions and caps through hedging-based indifference pricing in incomplete markets, with explicit valuation of the unhedgeable residual risk. Submitted for publication (with T. Pennanen).",
       "Built and solved the underlying high-dimensional, semi-static portfolio optimisation model using convex optimisation, Monte Carlo simulation and out-of-sample validation.",
       "Automated curve construction, simulation, optimisation and pricing workflows in Python using NumPy, pandas and Numba, cutting payoff, cash-flow and forward-curve computation from 8 minutes to 50 seconds.",
-      "Developed a statistical term-structure model for SOFR forward curves under the real-world measure, estimated by least squares from four years of SOFR fixings and CME futures quotes. Published in Applied Mathematical Finance (with T. Pennanen).",
+      "Developed a statistical term-structure model for SOFR forward curves under the real-world measure, estimated by least squares from four years of SOFR fixings and CME futures quotes. Published in *Applied Mathematical Finance* (with T. Pennanen).",
     ],
   },
   {

@@ -4,12 +4,7 @@ import { LinkedinIcon, Mail, MapPin, Send } from "lucide-react";
 import researcherImage from "@/assets/wt-portrait.webp";
 import { LINKEDIN_URL, QUANT_EMAIL, headline, profile } from "@/data/quant";
 import WorkRightsBadge from "@/components/quant/WorkRightsBadge";
-
-// Renders *text* segments in italics (used for journal names in the profile).
-const withItalics = (text: string) =>
-  text.split(/(\*[^*]+\*)/).map((part, index) =>
-    part.startsWith("*") && part.endsWith("*") ? <em key={index}>{part.slice(1, -1)}</em> : part
-  );
+import { withItalics } from "@/lib/withItalics";
 
 // Opens an email to request the CV.
 const cvRequestLink = `mailto:${QUANT_EMAIL}?subject=${encodeURIComponent("CV request")}&body=${encodeURIComponent(
@@ -31,7 +26,11 @@ const QuantHero = () => (
                 <img src={researcherImage} alt="Waleed Taoum" className="w-full h-full object-cover" />
               </div>
               <h2 className="text-lg font-bold text-foreground mb-3 [font-variant:small-caps] tracking-wide">{headline.title}</h2>
-              <p className="text-[13px] text-muted-foreground mb-10">{headline.tagline}</p>
+              <p className="text-[13px] text-muted-foreground mb-10">
+                {headline.tagline.map((line) => (
+                  <span key={line} className="block">{line}</span>
+                ))}
+              </p>
               <div className="space-y-4 text-[13px]">
                 <div className="flex items-center justify-center gap-2">
                   <Mail size={16} className="text-primary" />
