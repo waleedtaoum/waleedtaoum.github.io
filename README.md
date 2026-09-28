@@ -1,15 +1,4 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/9c56c7bf-e60f-4754-b1ba-cd7c84940889
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-https://github.com/password_reset/AH46AL7UYXYW7OBGPTTSOG3KXLECPBNFMVWWC2LMWV3WC3DFMVSHIYLPOVWUAZ3NMFUWYLTDN5W2KZTPOJRWLQVTOR3W6X3GMFRXI33SL53GK4TJMZUWKZGCWF2HO327MZQWG5DPOJPW2ZLUNBXWJJDON5XGLOTGN5ZGGZLEL53WKYLLL5YGC43TO5XXEZC7OJSXGZLUYI?auto=true
-**Use Lovable**
-
+# Welcome
 
 **Use your preferred IDE**
 
