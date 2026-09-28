@@ -123,7 +123,7 @@ const ProfileSection = () => {
                     </a>{" "}
                     at{" "}
                     <a
-                      href="https://www.kcl.ac.uk"
+                      href="https://www.kcl.ac.uk/mathematics/study-with-us/research-degrees"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
