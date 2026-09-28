@@ -111,8 +111,8 @@ export const research = [
 ];
 
 export const education = [
-  { degree: "PhD in Applied Mathematics", note: "UKRI Scholarship", institution: "King's College London", url: "https://www.kcl.ac.uk", year: "2026" },
-  { degree: "MSc Financial Mathematics", note: "Distinction · Top 3 of 96", institution: "King's College London", url: "https://www.kcl.ac.uk", year: "2020" },
+  { degree: "PhD in Applied Mathematics", note: "UKRI Scholarship", institution: "King's College London", url: "https://www.kcl.ac.uk/study/postgraduate-research/areas/applied-mathematics-research-mphil-phd", year: "2026" },
+  { degree: "MSc Financial Mathematics", note: "Distinction · Top 3 of 96", institution: "King's College London", url: "https://www.kcl.ac.uk/study/postgraduate-taught/courses/mathematics-msc", year: "2020" },
   { degree: "MBA Finance and Financial Engineering", note: "Distinction", institution: "ISC Paris", url: "https://www.iscparis.com", year: "2011" },
   { degree: "Master in Management and Informatics, specialisation in Finance", institution: "ESIEE Paris", url: "https://www.esiee.fr", year: "2008" },
   { degree: "BSc Computer Engineering", institution: "American University of Technology", url: "https://www.aut.edu", year: "2004" },

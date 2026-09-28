@@ -30,7 +30,7 @@ const CVSection = () => {
     {
       degree: "PhD in Applied Mathematics",
       institution: "King's College London",
-      url: "https://www.kcl.ac.uk",
+      url: "https://www.kcl.ac.uk/study/postgraduate-research/areas/applied-mathematics-research-mphil-phd",
       year: "2026",
       supervisor: { name: "Professor Teemu Pennanen", url: "https://sites.google.com/view/pennanen" },
       thesis: "Statistical Modeling, Portfolio Optimization, and Indifference Pricing in SOFR Derivatives Market"
@@ -38,7 +38,7 @@ const CVSection = () => {
     {
       degree: "MSc in Financial Mathematics",
       institution: "King's College London",
-      url: "https://www.kcl.ac.uk",
+      url: "https://www.kcl.ac.uk/study/postgraduate-taught/courses/mathematics-msc",
       honours: "Distinction",
       year: "2020"
     },
@@ -66,7 +66,7 @@ const CVSection = () => {
     {
       position: "Graduate Teaching Assistant",
       institution: "King's College London",
-      url: "https://www.kcl.ac.uk",
+      url: "https://www.kcl.ac.uk/mathematics",
       location: "London, United Kingdom",
       period: "2021 - 2026",
       summary: "Teaching assistant for graduate and undergraduate modules in financial mathematics and probability."
