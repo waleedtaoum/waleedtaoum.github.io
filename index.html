@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waleed Taoum · Quantitative Researcher</title>
+    <script>
+      // Apply the saved theme before first paint (dark by default) to avoid a flash.
+      try {
+        var t = localStorage.getItem("theme");
+        var dark = t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (!dark) document.documentElement.classList.remove("dark");
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="description" content="Waleed Taoum, quantitative researcher: derivatives pricing and hedging, interest rates and Python. PhD in Applied Mathematics, King's College London. London-based, UK ILR: full right to work, no sponsorship required." />
+    <meta name="author" content="Waleed Taoum" />
+
+    <meta property="og:title" content="Waleed Taoum · Quantitative Researcher" />
+    <meta property="og:description" content="Derivatives pricing and hedging, interest rates and Python. PhD in Applied Mathematics, King's College London. UK ILR, no sponsorship required." />
+    <meta property="og:type" content="profile" />
+    <!-- TODO at deployment: make this an absolute URL (https://<site>/og-image.jpg); most link previewers ignore relative paths -->
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Waleed Taoum, Quantitative Researcher" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Waleed Taoum · Quantitative Researcher" />
+    <meta name="twitter:description" content="Derivatives pricing and hedging, interest rates and Python. PhD in Applied Mathematics, King's College London." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 30% 96%;
+    --foreground: 220 90% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 90% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 90% 15%;
+
+    --primary: 220 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 90%;
+    --secondary-foreground: 220 90% 15%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 30% 45%;
+
+    --accent: 210 100% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Academic blue theme */
+    --blue-50: 220 40% 98%;
+    --blue-100: 220 30% 95%;
+    --blue-200: 220 25% 88%;
+    --blue-600: 220 70% 55%;
+    --blue-700: 220 80% 45%;
+    --blue-800: 220 90% 35%;
+    --blue-900: 220 95% 25%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--blue-50)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 12px -2px hsl(var(--primary) / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark theme ("Graphite"): neutral charcoal with the same blue accent as light mode */
+  .dark {
+    color-scheme: dark;
+
+    --background: 0 0% 7%;
+    --foreground: 0 0% 93%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 93%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 93%;
+
+    --primary: 213 90% 68%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 93%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 213 90% 68%;
+    --accent-foreground: 0 0% 8%;
+
+    --section-tint: 0 0% 9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 213 90% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Running text (paragraphs, bullet points): main text colour, 16px, 1.5 line spacing.
+     About Me / Biography use it as is; other sections add text-[14px] to sit slightly smaller.
+     Muted grey is kept for secondary details such as dates and locations. */
+  .text-body {
+    color: hsl(var(--foreground) / 0.86);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Justified text: let the browser hyphenate long words at line ends to avoid wide word gaps.
+     Uses the page language (lang="en" in index.html). */
+  [class*="text-justify"] {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  /* When the browser jumps to a section from a URL hash (e.g. /academic#publications),
+     land its title just below the sticky navigation bar, matching useSectionNavigation. */
+  section[id] {
+    /* 88px title position = 64px nav + 24px gap; minus the sections' 48px top padding */
+    scroll-margin-top: 40px;
+  }
+}
